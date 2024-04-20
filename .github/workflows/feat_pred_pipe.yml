@@ -27,7 +27,7 @@ jobs:
           HOPSWORKS_API_KEY: ${{ secrets.IRIS_FLOWER_DATASET }}
         run: ./scripts/feat_pred_pipe.sh
 
-      - name: publish github pages
+      - name: publish streamlit UI
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Automated graph published"
