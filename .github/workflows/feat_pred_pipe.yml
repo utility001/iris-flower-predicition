@@ -6,9 +6,9 @@ on:
 #    - cron: '11 11 * * *'
 
 permissions:
-  actions: read|write|none
+  actions: read, write
   # checks: read|write|none
-  contents: read|write|none
+  contents: read, write
   # deployments: read|write|none
   # issues: read|write|none
   # packages: read|write|none
