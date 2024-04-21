@@ -15,11 +15,11 @@ st.header("Today's Iris Flower Prediction")
 pred_col, actual_col = st.columns(2)
 
 with pred_col:
-    pred_image = Image.open('pred_assets/latest_iris.jpg')
+    pred_image = Image.open('pred_assets/latest_iris.png')
     st.image(pred_image, caption="Prediction from model")
 
 with actual_col:
-    actual_image = Image.open('pred_assets/actual_iris.jpg')
+    actual_image = Image.open('pred_assets/actual_iris.png')
     st.image(actual_image, caption="Actual image")
 
 st.write("Data Source: Synthetic Data")
@@ -67,7 +67,7 @@ with st.sidebar.expander("Iris Demo"):
         predd = f"Iris {pred}"
     
         # Load and return image
-        image_path = os.path.join('images', f'{pred}.jpg')
+        image_path = os.path.join('images', f'{pred}.png')
         image = Image.open(image_path)    
     
         return predd, image
